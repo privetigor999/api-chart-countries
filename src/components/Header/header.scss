@@ -1,0 +1,73 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+  height: var(--height-header);
+  padding: 0 22px;
+
+  color: var(--color-white);
+  border-bottom: 2px solid #e5e5e5;
+
+  &__title {
+    display: flex;
+    align-items: flex-start;
+
+    &-text {
+      font-family: "Lobster";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 120%;
+
+      margin-right: 7px;
+
+      color: var(--color-darken-brown);
+
+      @media screen and (min-width: 375px) {
+        font-size: 26px;
+      }
+
+      @media screen and (min-width: 768px) {
+        font-size: 36px;
+      }
+    }
+
+    &-span {
+      color: var(--color-brown);
+    }
+  }
+
+  &__tabs {
+    display: none;
+    height: calc(100% + 2px);
+
+    @media screen and (min-width: 375px) {
+      display: block;
+    }
+  }
+  &__list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    height: 100%;
+
+    &-item {
+      width: 60px;
+      height: inherit;
+      margin-top: 2px;
+
+      @media screen and (min-width: 768px) {
+        width: 86px;
+        margin-left: 30px;
+      }
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+}

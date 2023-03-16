@@ -1,0 +1,21 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* variables */
+
+body {
+  --color-white: #ffffff;
+  --color-brown: #c96c66;
+  --color-darken-brown: #7e2d27;
+  --color-lighten-black: rgba(0, 0, 0, 0.54);
+  --color-lighten-gray: rgba(0, 0, 0, 0.04);
+
+  --height-header: 71px;
+}
+
+ul {
+  list-style: none;
+}

@@ -1,0 +1,19 @@
+.chart {
+  width: percentage(1 /3);
+
+  &--big {
+    width: 100%;
+
+    @media screen and (min-width: 375px) {
+      width: percentage(1 / 3);
+    }
+  }
+
+  &--medium {
+    width: percentage(1 / 3);
+  }
+
+  &--small {
+    width: percentage(1 /1);
+  }
+}

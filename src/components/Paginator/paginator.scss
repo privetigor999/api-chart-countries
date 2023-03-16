@@ -1,0 +1,41 @@
+.paginator {
+  &__list {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  &__item {
+    & + & {
+      margin-left: 10px;
+    }
+  }
+
+  &__button {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+
+    width: 28px;
+    height: 38px;
+
+    cursor: pointer;
+
+    border: 1px solid var(--color-white);
+    background-color: transparent;
+    color: var(--color-white);
+
+    @media screen and (min-width: 375px) {
+      margin-top: 70px;
+    }
+
+    &--active {
+      color: var(--color-brown);
+      border: 1px solid var(--color-brown);
+
+      &:before {
+        border-color: var(--color-brown);
+      }
+    }
+  }
+}

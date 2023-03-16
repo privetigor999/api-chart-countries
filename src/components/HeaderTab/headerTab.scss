@@ -1,0 +1,39 @@
+.headerTab {
+  height: 100%;
+  width: 100%;
+
+  cursor: pointer;
+
+  border: none;
+  border-bottom: 2px solid #e5e5e5;
+  background-color: var(--color-white);
+
+  &:hover {
+    background-color: var(--color-lighten-gray);
+  }
+
+  &__icon {
+    fill: var(--color-lighten-black);
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 114%;
+
+    text-align: center;
+    letter-spacing: 1.25px;
+    text-transform: uppercase;
+    color: var(--color-lighten-black);
+  }
+
+  &--active {
+    border-bottom: 2px solid var(--color-brown);
+  }
+
+  &--active & {
+    &__icon {
+      fill: var(--color-brown);
+    }
+  }
+}

@@ -1,0 +1,31 @@
+.field {
+  overflow: scroll;
+
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+
+  width: 100%;
+  height: calc(100vh - var(--height-header));
+  padding: 30px;
+
+  background-color: #2c343c;
+
+  &__list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+    width: 100%;
+  }
+
+  &--big {
+    flex-wrap: nowrap;
+
+    @media screen and (min-width: 375px) {
+      justify-content: center;
+    }
+  }
+}
